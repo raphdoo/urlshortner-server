@@ -29,10 +29,7 @@ First, you need to clone the repository into your local machine
 ```javascript
 $ git clone https://github.com/raphdoo/urlshortner-api.git
 ```
-Then, change directory into the project folder
-```
-$ cd backend 
-```
+
 Then, you need to install the dependencies.
 ```javascript
 $ npm install
