@@ -16,7 +16,6 @@ router.get(
   '/api/history',
   currentUser,
   requireAuth,
-  cacheData,
   async (req: Request, res: Response) => {
     const userId = req.currentUser?.id;
     const page = parseInt(JSON.stringify(req.query.page)) || 1;
@@ -29,11 +28,6 @@ router.get(
       .skip((page - 1) * limit)
       .limit(limit)
       .exec();
-
-    await client.set(endpoint, JSON.stringify(userLinks), {
-      EX: 180,
-      NX: true,
-    });
 
     res.send(userLinks);
   }
