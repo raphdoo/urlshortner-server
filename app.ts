@@ -32,7 +32,10 @@ app.use(cookieParser());
 
 app.use(
   cors({
-    origin: ['http://localhost:3000', 'https://raph0.stoplight.io'],
+    origin: [
+      'https://urlshortener-hd3k.onrender.com',
+      'https://raph0.stoplight.io',
+    ],
     credentials: true,
   })
 );
