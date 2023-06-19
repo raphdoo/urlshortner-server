@@ -34,7 +34,10 @@ Then, you need to install the dependencies.
 ```javascript
 $ npm install
 ``` 
-Then, you need to populate the `.env` file, required fields have been provided.
+Then, you need to create a `.env` in root folder and copy the `dotenv` file to it and populate the required field.
+```javascript
+$ cp dotenv .env
+```
 
 Then, you need to run the integration test to ensure that all test cases passed.
 ```java
