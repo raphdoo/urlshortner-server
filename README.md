@@ -50,7 +50,7 @@ $ npm start
 ```
 
 
-### Base URL  
+### Base URL  : https://urlshortner-server.onrender.com/
 
 
 
