@@ -65,6 +65,10 @@ app.use(customUrl);
 // setting up swagger
 // endpoint = http://localhost:4000/docs/
 
+app.get('/', (req: Request, res: Response) => {
+  res.send('server working');
+});
+
 app.all('*', () => {
   throw new NotFoundError();
 });
